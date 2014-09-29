@@ -4,17 +4,18 @@
  * for use with Nick Parker's "split hand" palm design
  ***********************/
 
-palm_stl = "For Judah/JudahLeftHandShortened.stl"; //location of scan of wearer's hand (should be manifold STL)
-palm_blank_stl = "palm_blank.stl"; //location of blank palm file
-pos = [0,0,0]; //X, Y, Z coordinates for positioning the palm space in the prosthesis
-rot = [0,0,0]; //rotation of palm about each axis
-scale = 1.10; //scale of palm to leave about 4mm extra
-
-//**********************
-
-difference() {
-	import(palm_blank_stl, convexity=10);
-	translate(pos) rotate(rot) {
-		import(palm_stl, convexity=10);
+// takes an STL of the wearer's palm/wrist (string), coordinates for positioning the palm space ([float, float, float], mm), and the amount of space to add for padding between the palm and prosthesis (float, mm)
+module cut_palm(palm, pos=[0,0,0], pad=4) {
+	palm_blank_stl = "palm_blank.stl"; //location of blank palm file
+	palm_h = 49; //height of palm blank
+	
+	difference() {
+		import(palm_blank_stl, convexity=10);
+		translate(pos) {
+			minkowski() {
+				cylinder(r=pad,h=1);
+				import(palm, convexity=10);
+			}
+		}
 	}
 }
