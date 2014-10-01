@@ -5,7 +5,7 @@
  ***********************/
 
 palm_stl = "JudahLeftHandShortened.stl"; //location of scan of wearer's hand (should be manifold STL)
-palm_blank_stl = "../palm_blank_repaired.stl"; //location of blank palm file
+palm_blank_stl = "../palm_blank_try2.stl"; //location of blank palm file
 palm_blank_h = 49; //height of the blank palm piece
 pos = [-90.5,-85,42]; //X, Y, Z coordinates for positioning the palm space in the prosthesis
 rot = [0,0,0]; //rotation of palm about each axis
