@@ -8,9 +8,13 @@
  * @step Render each part (F6) and export as STL, then print.
  */
 
-hand_scan = '../../userScans/JudahLeftHand.stl';
+hand_scan = "../../userScans/JudahLeftHandShortened.stl";
 
-hand_pos = [10,10,10];
-hand_rot = [0,0,0];
+hand_pos = [-70,-88,20];
+hand_rot = [0,-10,20];
 
 palm_h = 40; //height of the area of the palm to be covered by the silicone
+
+base_thickness = 4; //thickness of the rigid base oval
+base_h = 25;
+base_w = 30;
