@@ -15,6 +15,9 @@ hand_rot = [0,-10,20];
 
 palm_h = 40; //height of the area of the palm to be covered by the silicone
 
-base_thickness = 4; //thickness of the rigid base oval
-base_h = 25;
-base_w = 30;
+base_thickness = 3; //thickness of the rigid base oval
+base_h = 26;
+base_w = 35;
+
+thumb_slot_w = 17;
+thumb_slot_depth = 14;
