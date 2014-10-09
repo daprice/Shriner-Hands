@@ -3,6 +3,7 @@
  * @id config_file
  * @name Configuration File
  * @category Prerequisites!
+ * @using 1 hand_scan
  * @step Open configuration.scad in your favorite text editor.
  * @step Set the variables (more documentation coming soon!)
  * @step Render each part (F6) and export as STL, then print.

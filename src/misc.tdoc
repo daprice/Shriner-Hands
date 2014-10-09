@@ -13,3 +13,11 @@
  * @category Materials
  * @image pad_casting/DragonSkin.jpg
  */
+
+/**
+ * 3D scan of the patient's hand with wrist and finger(s) held straight. Must be a manifold mesh (STL file); may be simplified for faster processing. Place in userScans directory before configuring and rendering OpenSCAD models.
+ * @id hand_scan
+ * @name 3D scan of patient's hand
+ * @category Prerequisites!
+ * @common
+ */
