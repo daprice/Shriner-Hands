@@ -21,4 +21,4 @@ base_h = 26;
 base_w = 35;
 
 thumb_slot_w = 17;
-thumb_slot_depth = 14;
+thumb_slot_depth = 17;
