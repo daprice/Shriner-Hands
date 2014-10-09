@@ -1,0 +1,15 @@
+/**
+ * Dragon Skin 10 silicone resin kit, available from Smooth-On. Shore A durometer (hardness) 10.
+ * @id g_dragon_skin_10
+ * @name grams of Dragon Skin 10 liquid silicone
+ * @category Materials
+ * @image pad_casting/DragonSkin.jpg
+ */
+
+/**
+ * Dragon Skin 30 silicone resin kit, available from Smooth-On. Shore A durometer (hardness) 30.
+ * @id g_dragon_skin_30
+ * @name grams of Dragon Skin 30 liquid silicone
+ * @category Materials
+ * @image pad_casting/DragonSkin.jpg
+ */

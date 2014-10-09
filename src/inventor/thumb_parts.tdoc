@@ -1,0 +1,37 @@
+/**
+ * Mold for casting the silicone finger tip grip - rendered from src/inventor/thumb_mold.ipt
+ * @id thumb_mold
+ * @name Thumb Mold
+ * @category Printed
+ */
+
+/**
+ * Printed skeletal thumb tip - rendered from src/inventor/thumb_with_grip_cutout.ipt
+ * @id thumb_with_grip_cutout
+ * @name Thumb with grip cutout
+ * @category Printed
+ */
+
+/**
+ * Printed complete thumb without grip - rendered from src/inventor/thumb2.ipt
+ * @id thumb2
+ * @name Thumb
+ * @category Printed
+ */
+
+/**
+ * Molded silicone thumb pad can improve grip and provide some tactile feedback to the wearer
+ * @id molded_thumb
+ * @name Thumb with Molded Grip
+ * @assembled
+ * @using 1 thumb_mold
+ * @using 1 thumb_with_grip_cutout
+ * @using 10 g_dragon_skin_10
+ * @step Print the skeletal thumb tip and mold.
+ * @step Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier's safety guidelines while working with liquid silicone. [[pad_casting/Mixing.jpg]]
+ * @step Pour the liquid silicone to mostly fill the thumb mold.
+ * @step Insert the printed skeletal thumb into the filled mold as far as it will go.
+ * @step Remove most of the excess silicone. Small amounts of excess can be removed afer molding.
+ * @step After the silicone has cured, carefully pull the thumb to remove it from the mold.
+ * @step If necessary, use a knife to trim off excess silicone so that the edges of the silicone part are flush with those of the hard printed part.
+ */

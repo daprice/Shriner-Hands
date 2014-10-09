@@ -1,9 +1,8 @@
 /**
- * 3D printed rigid base for the static thumb post
+ * 3D printed rigid base for the static thumb post - rendered from src/scad/rigid_base.scad
  * @id rigid_base
  * @name Rigid base
  * @category Printed
- * @type Printed
  */
 
 //by Dale Price
