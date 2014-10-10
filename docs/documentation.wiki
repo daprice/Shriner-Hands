@@ -1,0 +1,67 @@
+== Bill of Materials ==
+
+=== Prerequisites! ===
+{| class="wikitable sortable" border="1"
+|-
+! scope="col" | Quantity
+! scope="col" | Description
+! scope="col" | Type
+! scope="col" class="unsortable" | Comments
+! scope="col" class="unsortable" | Diagram
+|-
+| 4 || 3D scan of patient's hand ||  ||  ||
+|-
+| 4 || Configuration and Rendering of 3D models ||  ||  ||
+|}
+
+=== Materials ===
+{| class="wikitable sortable" border="1"
+|-
+! scope="col" | Quantity
+! scope="col" | Description
+! scope="col" | Type
+! scope="col" class="unsortable" | Comments
+! scope="col" class="unsortable" | Diagram
+|-
+| 100 || grams of Dragon Skin 30 liquid silicone ||  ||  || [[File:pad_casting/DragonSkin.jpg|50px]]
+|-
+| 10 || grams of Dragon Skin 10 liquid silicone ||  ||  || [[File:pad_casting/DragonSkin.jpg|50px]]
+|}
+
+=== Fasteners ===
+{| class="wikitable sortable" border="1"
+|-
+! scope="col" | Quantity
+! scope="col" | Description
+! scope="col" | Type
+! scope="col" class="unsortable" | Comments
+! scope="col" class="unsortable" | Diagram
+|-
+| 4 || M4 Hex Nut ||  ||  ||
+|-
+| 1 || Velcro Strap ||  ||  ||
+|-
+| 4 || M4x15 Bolt ||  ||  ||
+|}
+
+=== Printed ===
+{| class="wikitable sortable" border="1"
+|-
+! scope="col" | Quantity
+! scope="col" | Description
+! scope="col" | Type
+! scope="col" class="unsortable" | Comments
+! scope="col" class="unsortable" | Diagram
+|-
+| 1 || Mold - left half ||  ||  || [[File:mold_left_half.png|50px]]
+|-
+| 1 || Truncated Print of Patient's Hand ||  ||  || [[File:truncated_hand.png|50px]]
+|-
+| 1 || Rigid base ||  ||  || [[File:rigid_base.png|50px]]
+|-
+| 1 || Mold - right half ||  ||  || [[File:mold_right_half.png|50px]]
+|-
+| 1 || Thumb with grip cutout ||  ||  || [[File:thumb_with_grip_cutout.png|50px]]
+|-
+| 1 || Thumb Mold ||  ||  || [[File:thumb_mold.png|50px]]
+|}

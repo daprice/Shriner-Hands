@@ -1,0 +1,718 @@
+<html>
+  <head>
+    <title>Assembly by ThingDoc</title>
+    <link rel="stylesheet" type="text/css" href="html_data/thingdoc.css" />
+   	<link rel="stylesheet" type="text/css" href="html_data/facebox.css" />
+   	<link media="only screen and (max-device-width: 800px)" href="html_data/iphone.css" type="text/css" rel="stylesheet" />
+   	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0,minimum-scale=1.0,
+        maximum-scale=1.0, user-scalable = no">
+   	<meta name="apple-mobile-web-app-capable" content="yes" />
+   	<script type="text/javascript" src="html_data/jquery.js"></script>
+   	<script type="text/javascript" src="html_data/facebox.js"></script>
+   	<script type="text/javascript" src="html_data/jquery.cookie.js"></script>
+   	<script type="text/javascript" src="html_data/thingdoc.js"></script>
+   	<script>var unique = "153431534841";
+   	</script>
+  </head>
+  <body>
+
+    <div id="menu">
+    
+    <span id="genericmenu">
+    	<a href="#" id="homebutton" class="button gray">Home</a>
+    	<a href="#" id="bombutton" class="button">BOM</a>
+    	<a href="#" id="thingsbutton" class="button white">Things</a>
+    </span>
+    <a href="#" id="assemblybutton" class="button white">Assembly</a>
+    <span id="assemblymenu">
+    	<a href="#" id="decreaseAssembly" class="button white">&lt;</a>
+    		<span id="assemblyActual">0</span>/<span id="assemblyCount">0</span>
+    	<a href="#" id="increaseAssembly" class="button white">&gt;</a>
+    </span>
+	<a href="http://thingdoc.org/"><img src="html_data/logo120.png" id="logo"/></a>
+	</div>
+
+
+    
+    <div id="main"><div id="scroller">
+
+    <div id="home">
+		<h1>Assembly</h1>
+		      <img src="html_data/logo.png" id="logoBig" width="435" />
+		      <p>Assembly of Low Profile Thumb Prosthesis</p>
+    </div>
+
+    <div id="bom">
+		<h2>Bill of Materials</h2>
+		<p>Check all parts to get green <a href="#bom" class="button green smallbutton">BOM</a> button in menu, then proceed to the assembly.</p><p>Don't worry, the status of your BOM remains even after refreshing the page!</p>
+		
+			<h3>Prerequisites!</h3>
+			<table id="bomtable">
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="hand_scan">
+					</td>
+					<td class="right">
+						<strong>4 x</strong>
+					</td>
+					<td>
+						<a href="#thing_hand_scan" rel="facebox" >3D scan of patient&#39;s hand</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="config_file">
+					</td>
+					<td class="right">
+						<strong>4 x</strong>
+					</td>
+					<td>
+						<a href="#thing_config_file" rel="facebox" >Configuration and Rendering of 3D models</a>
+					</td>
+				</tr>
+			
+			</table>
+		
+			<h3>Materials</h3>
+			<table id="bomtable">
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="g_dragon_skin_30">
+					</td>
+					<td class="right">
+						<strong>100 x</strong>
+					</td>
+					<td>
+						<a href="#thing_g_dragon_skin_30" rel="facebox" >grams of Dragon Skin 30 liquid silicone</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="g_dragon_skin_10">
+					</td>
+					<td class="right">
+						<strong>10 x</strong>
+					</td>
+					<td>
+						<a href="#thing_g_dragon_skin_10" rel="facebox" >grams of Dragon Skin 10 liquid silicone</a>
+					</td>
+				</tr>
+			
+			</table>
+		
+			<h3>Fasteners</h3>
+			<table id="bomtable">
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="m4_nut">
+					</td>
+					<td class="right">
+						<strong>4 x</strong>
+					</td>
+					<td>
+						<a href="#thing_m4_nut" rel="facebox" >M4 Hex Nut</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="velcro_strap">
+					</td>
+					<td class="right">
+						<strong>1 x</strong>
+					</td>
+					<td>
+						<a href="#thing_velcro_strap" rel="facebox" >Velcro Strap</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="m4x15_bolt">
+					</td>
+					<td class="right">
+						<strong>4 x</strong>
+					</td>
+					<td>
+						<a href="#thing_m4x15_bolt" rel="facebox" >M4x15 Bolt</a>
+					</td>
+				</tr>
+			
+			</table>
+		
+			<h3>Printed</h3>
+			<table id="bomtable">
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="mold_left_half">
+					</td>
+					<td class="right">
+						<strong>1 x</strong>
+					</td>
+					<td>
+						<a href="#thing_mold_left_half" rel="facebox" >Mold - left half</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="truncated_hand">
+					</td>
+					<td class="right">
+						<strong>1 x</strong>
+					</td>
+					<td>
+						<a href="#thing_truncated_hand" rel="facebox" >Truncated Print of Patient&#39;s Hand</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="rigid_base">
+					</td>
+					<td class="right">
+						<strong>1 x</strong>
+					</td>
+					<td>
+						<a href="#thing_rigid_base" rel="facebox" >Rigid base</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="mold_right_half">
+					</td>
+					<td class="right">
+						<strong>1 x</strong>
+					</td>
+					<td>
+						<a href="#thing_mold_right_half" rel="facebox" >Mold - right half</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="thumb_with_grip_cutout">
+					</td>
+					<td class="right">
+						<strong>1 x</strong>
+					</td>
+					<td>
+						<a href="#thing_thumb_with_grip_cutout" rel="facebox" >Thumb with grip cutout</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<input type="checkbox" class="bom_checkbox" name="thumb_mold">
+					</td>
+					<td class="right">
+						<strong>1 x</strong>
+					</td>
+					<td>
+						<a href="#thing_thumb_mold" rel="facebox" >Thumb Mold</a>
+					</td>
+				</tr>
+			
+			</table>
+		
+    </div>
+
+	<div id="things">
+		<h2>Things Overview</h2>
+		<p>List of things and their descriptions</p>
+		
+			<div id="thing_1" class="thing_overview" ></div>
+		
+			<div id="thing_config_file" class="thing_overview" >
+					<h3>Configuration and Rendering of 3D models</h3>
+					<div class="stuff">
+						        <p>Configuration settings for the Shriners Hand, required to generate correct STLs of the printed parts. See the Configuration File Assembly instructions to set this up.</p>
+					</div>
+				</div>
+		
+			<div id="thing_rigid_base" class="thing_overview" >
+					<h3>Rigid base</h3>
+					<div class="stuff">
+						        <p>3D printed rigid base for the static thumb post - rendered from src/scad/rigid_base.scad</p>
+						        <img src="images/rigid_base.png" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_silicone_sleeve" class="thing_overview" >
+					<h3>Silicone sleeve</h3>
+					<div class="stuff">
+						        <p>Silicone sleeve that goes over the patient&#39;s palm</p>
+					</div>
+				</div>
+		
+			<div id="thing_molded_thumb" class="thing_overview" >
+					<h3>Thumb with Molded Grip</h3>
+					<div class="stuff">
+						        <p>Molded silicone thumb pad can improve grip and provide some tactile feedback to the wearer</p>
+					</div>
+				</div>
+		
+			<div id="thing_truncated_hand" class="thing_overview" >
+					<h3>Truncated Print of Patient&#39;s Hand</h3>
+					<div class="stuff">
+						        <p>Shortened and resized portion of the patient&#39;s palm to be the center of the mold during silicone casting - rendered from src/scad/truncated_hand.scad (example shown)</p>
+						        <img src="images/truncated_hand.png" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_thumb_mold" class="thing_overview" >
+					<h3>Thumb Mold</h3>
+					<div class="stuff">
+						        <p>Mold for casting the silicone finger tip grip - rendered from src/inventor/thumb_mold.ipt</p>
+						        <img src="images/thumb_mold.png" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_m4_nut" class="thing_overview" >
+					<h3>M4 Hex Nut</h3>
+					<div class="stuff">
+					</div>
+				</div>
+		
+			<div id="thing_g_dragon_skin_10" class="thing_overview" >
+					<h3>grams of Dragon Skin 10 liquid silicone</h3>
+					<div class="stuff">
+						        <p>Dragon Skin 10 silicone resin kit, available from Smooth-On. Shore A durometer (hardness) 10.</p>
+						        <img src="images/pad_casting/DragonSkin.jpg" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_thumb2" class="thing_overview" >
+					<h3>Thumb</h3>
+					<div class="stuff">
+						        <p>Printed complete thumb without grip - rendered from src/inventor/thumb2.ipt</p>
+					</div>
+				</div>
+		
+			<div id="thing_mold_right_half" class="thing_overview" >
+					<h3>Mold - right half</h3>
+					<div class="stuff">
+						        <p>Right half of 3D printed mold for casting the silicone sleeve - rendered from src/scad/mold_right.scad</p>
+						        <img src="images/mold_right_half.png" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_thumb_with_grip_cutout" class="thing_overview" >
+					<h3>Thumb with grip cutout</h3>
+					<div class="stuff">
+						        <p>Printed skeletal thumb tip - rendered from src/inventor/thumb_with_grip_cutout.ipt</p>
+						        <img src="images/thumb_with_grip_cutout.png" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_g_dragon_skin_30" class="thing_overview" >
+					<h3>grams of Dragon Skin 30 liquid silicone</h3>
+					<div class="stuff">
+						        <p>Dragon Skin 30 silicone resin kit, available from Smooth-On. Shore A durometer (hardness) 30.</p>
+						        <img src="images/pad_casting/DragonSkin.jpg" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_velcro_strap" class="thing_overview" >
+					<h3>Velcro Strap</h3>
+					<div class="stuff">
+						        <p>9mm wide velcro strap of adequate length to wrap around the patient&#39;s palm with at least 30% extra.</p>
+					</div>
+				</div>
+		
+			<div id="thing_mold_left_half" class="thing_overview" >
+					<h3>Mold - left half</h3>
+					<div class="stuff">
+						        <p>Left half of 3D printed mold for casting the silicone sleeve - rendered from src/scad/mold_left_half.scad</p>
+						        <img src="images/mold_left_half.png" width="256" />
+					</div>
+				</div>
+		
+			<div id="thing_hand_scan" class="thing_overview" >
+					<h3>3D scan of patient&#39;s hand</h3>
+					<div class="stuff">
+						        <p>3D scan of the patient&#39;s hand with wrist and finger(s) held straight. Must be a manifold mesh (STL file); may be simplified for faster processing. Place in userScans directory before configuring and rendering OpenSCAD models.</p>
+					</div>
+				</div>
+		
+			<div id="thing_m4x15_bolt" class="thing_overview" >
+					<h3>M4x15 Bolt</h3>
+					<div class="stuff">
+						        <p>Size M4, at least 15mm long socket head cap screw or similar</p>
+					</div>
+				</div>
+		
+			<div id="thing_mold_assembly" class="thing_overview" >
+					<h3>Palm Sleeve Mold Assembly</h3>
+					<div class="stuff">
+						        <p>Assembled mold for casting the silicone sleeve</p>
+					</div>
+				</div>
+		
+	</div>
+
+	<div id="assembly">
+		<h2>Assembly Instructions</h2>
+		
+			<div class="subassembly">
+				<h3>Assemble Configuration and Rendering of 3D models</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_hand_scan" rel="facebox" >3D scan of patient&#39;s hand</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>
+								Open configuration.scad in your favorite text editor.
+							</li>
+							<li>
+								Set the variables (more documentation coming soon!)
+							</li>
+							<li>
+								Render each part (F6) and export as STL, then print.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+			<div class="subassembly">
+				<h3>Assemble Configuration and Rendering of 3D models</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_hand_scan" rel="facebox" >3D scan of patient&#39;s hand</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>
+								Open configuration.scad in your favorite text editor.
+							</li>
+							<li>
+								Set the variables (more documentation coming soon!)
+							</li>
+							<li>
+								Render each part (F6) and export as STL, then print.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+			<div class="subassembly">
+				<h3>Assemble Configuration and Rendering of 3D models</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_hand_scan" rel="facebox" >3D scan of patient&#39;s hand</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>
+								Open configuration.scad in your favorite text editor.
+							</li>
+							<li>
+								Set the variables (more documentation coming soon!)
+							</li>
+							<li>
+								Render each part (F6) and export as STL, then print.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+			<div class="subassembly">
+				<h3>Assemble Palm Sleeve Mold Assembly</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_rigid_base" rel="facebox" >Rigid base</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_mold_left_half" rel="facebox" >Mold - left half</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>4 x</strong>
+								</td>
+								<td>
+									<a href="#thing_m4x15_bolt" rel="facebox" >M4x15 Bolt</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_mold_right_half" rel="facebox" >Mold - right half</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>4 x</strong>
+								</td>
+								<td>
+									<a href="#thing_m4_nut" rel="facebox" >M4 Hex Nut</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>
+								Set one half of the mold on a flat surface with the flat side down.
+							</li>
+							<li>
+								Insert the rigid thumb base into the slot in the side of the mold, with the round part towrd the inside and the shorter prong toward the closed end of the mold.
+							</li>
+							<li>
+								Set the other half of the mold with the flat side up so the two halves align.
+							</li>
+							<li>
+								Fasten the two halves together using the nuts and bolts in the holes at each corner.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+			<div class="subassembly">
+				<h3>Assemble Configuration and Rendering of 3D models</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_hand_scan" rel="facebox" >3D scan of patient&#39;s hand</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>
+								Open configuration.scad in your favorite text editor.
+							</li>
+							<li>
+								Set the variables (more documentation coming soon!)
+							</li>
+							<li>
+								Render each part (F6) and export as STL, then print.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+			<div class="subassembly">
+				<h3>Assemble Silicone sleeve</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>100 x</strong>
+								</td>
+								<td>
+									<a href="#thing_g_dragon_skin_30" rel="facebox" >grams of Dragon Skin 30 liquid silicone</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_mold_assembly" rel="facebox" >Palm Sleeve Mold Assembly</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_truncated_hand" rel="facebox" >Truncated Print of Patient&#39;s Hand</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier&#39;s safety guidelines while working with liquid silicone.<br/>
+								<a href="images/pad_casting/Mixing.jpg" rel="facebox">
+									<img src="images/pad_casting/Mixing.jpg" width="256" />
+								</a>
+							</li>
+							<li>
+								Pour the liquid silicone to about halfway fill the mold.
+							</li>
+							<li>
+								Insert the truncated hand in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece.
+							</li>
+							<li>
+								Make sure the silicone settles to the bottom and that there is enough to fill the mold completely.
+							</li>
+							<li>
+								After the silicone cures, unscrew and separate the two halves of the mold, and pull out the truncated hand.
+							</li>
+							<li>
+								If necessary, use a knife to cut off any excess silicone and/or cut to better fit the patient&#39;s hand.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+			<div class="subassembly">
+				<h3>Assemble Thumb with Molded Grip</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>10 x</strong>
+								</td>
+								<td>
+									<a href="#thing_g_dragon_skin_10" rel="facebox" >grams of Dragon Skin 10 liquid silicone</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_thumb_mold" rel="facebox" >Thumb Mold</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_thumb_with_grip_cutout" rel="facebox" >Thumb with grip cutout</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>
+								Print the skeletal thumb tip and mold.
+							</li>
+							<li>Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier&#39;s safety guidelines while working with liquid silicone.<br/>
+								<a href="images/pad_casting/Mixing.jpg" rel="facebox">
+									<img src="images/pad_casting/Mixing.jpg" width="256" />
+								</a>
+							</li>
+							<li>
+								Pour the liquid silicone to mostly fill the thumb mold.
+							</li>
+							<li>
+								Insert the printed skeletal thumb into the filled mold as far as it will go.
+							</li>
+							<li>
+								Remove most of the excess silicone. Small amounts of excess can be removed afer molding.
+							</li>
+							<li>
+								After the silicone has cured, carefully pull the thumb to remove it from the mold.
+							</li>
+							<li>
+								If necessary, use a knife to trim off excess silicone so that the edges of the silicone part are flush with those of the hard printed part.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+			<div class="subassembly">
+				<h3>Assemble Assembly</h3>
+				<div class="stuff">
+						<p>Things needed:</p>
+						<table id="bomtable">
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_silicone_sleeve" rel="facebox" >Silicone sleeve</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_molded_thumb" rel="facebox" >Thumb with Molded Grip</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_velcro_strap" rel="facebox" >Velcro Strap</a>
+								</td>
+							</tr>
+						</table>
+					
+					<p>Steps:</p>
+					<ol>
+							<li>
+								Insert the thumb into the slot on the base.
+							</li>
+							<li>
+								Insert the velcro strap through the slot on the base.
+							</li>
+							<li>
+								Insert patient&#39;s hand into the sleeve.
+							</li>
+							<li>
+								Fasten the velcro strap and tighten as needed to hold the prosthesis in place during use.
+							</li>
+					</ol>
+				</div>
+			</div>
+		
+	</div>
+
+<div class="generated">Generated by ThingDOC</span>
+    </div>
+    </div>
+  </body>
+</html>
+<!-- Generated on 2014/10/09 19:27:15 by ThingDoc -->

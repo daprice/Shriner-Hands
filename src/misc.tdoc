@@ -21,3 +21,25 @@
  * @category Prerequisites!
  * @common
  */
+
+/**
+ * @id m4_nut
+ * @name M4 Hex Nut
+ * @category Fasteners
+ * @common
+ */
+
+/**
+ * Size M4, at least 15mm long socket head cap screw or similar
+ * @id m4x15_bolt
+ * @name M4x15 Bolt
+ * @category Fasteners
+ * @common
+ */
+
+/**
+ * 9mm wide velcro strap of adequate length to wrap around the patient's palm with at least 30% extra.
+ * @id velcro_strap
+ * @name Velcro Strap
+ * @category Fasteners
+ */

@@ -1,0 +1,30 @@
+Bill of Materials: Assembly
++++++++++++++++++++++++++++
+
+Prerequisites!
+==============
+- 4x 3D scan of patient's hand
+- 4x Configuration and Rendering of 3D models
+
+Materials
+=========
+- 100x grams of Dragon Skin 30 liquid silicone
+- 10x grams of Dragon Skin 10 liquid silicone
+
+Fasteners
+=========
+- 4x M4 Hex Nut
+- 1x Velcro Strap
+- 4x M4x15 Bolt
+
+Printed
+=======
+- 1x Mold - left half
+- 1x Truncated Print of Patient's Hand
+- 1x Rigid base
+- 1x Mold - right half
+- 1x Thumb with grip cutout
+- 1x Thumb Mold
+
+----
+Generated on 2014/10/09 19:27:15 by ThingDoc - http://thingdoc.org/
