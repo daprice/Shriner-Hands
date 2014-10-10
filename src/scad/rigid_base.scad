@@ -12,7 +12,7 @@
 include <configuration.scad>;
 use <misc.scad>;
 
-rigid_base();
+rotate([90,0,0]) rigid_base();
 
 module rigid_base(simplified=false) {
 	//generate round base to hold thumb in silicone sleeve:
