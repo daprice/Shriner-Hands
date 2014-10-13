@@ -19,6 +19,7 @@
  * Assembly of Low Profile Thumb Prosthesis
  * @id assembly
  * @name Assembly
+ * @image complete_prosthesis.jpg
  * @root
  * @assembled
  * @using 1 silicone_sleeve
