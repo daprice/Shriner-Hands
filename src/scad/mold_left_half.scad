@@ -74,5 +74,8 @@ module mold_half(side=0)
 
 		//spot for rigid thumb base to go during casting
 		translate([palm_h/2,side_y,-z]) rotate([0,-15,0]) rigid_base(simplified=true);
+
+		//slot to pry the two halves apart after casting:
+		translate([xy_margin, side_y, -side_z/2]) cube([10,3,10], center=true);
 	}
 }
