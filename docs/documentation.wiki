@@ -41,6 +41,8 @@
 |-
 | 1 || Velcro Strap ||  ||  ||
 |-
+| 6 || Piece of Tape ||  ||  ||
+|-
 | 4 || M4x15 Bolt ||  ||  ||
 |}
 

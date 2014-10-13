@@ -15,6 +15,7 @@ Fasteners
 =========
 - 4x M4 Hex Nut
 - 1x Velcro Strap
+- 6x Piece of Tape
 - 4x M4x15 Bolt
 
 Printed
@@ -27,4 +28,4 @@ Printed
 - 1x Thumb Mold
 
 ----
-Generated on 2014/10/09 19:27:15 by ThingDoc - http://thingdoc.org/
+Generated on 2014/10/13 14:06:42 by ThingDoc - http://thingdoc.org/

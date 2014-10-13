@@ -19,7 +19,6 @@
  * @id hand_scan
  * @name 3D scan of patient's hand
  * @category Prerequisites!
- * @common
  */
 
 /**
@@ -42,4 +41,12 @@
  * @id velcro_strap
  * @name Velcro Strap
  * @category Fasteners
+ */
+
+/**
+ * Almost any kind of tape. Kapton/polyamide tape works well because it does not react with the silicone. Electrical tape may prevent the silicone from curing properly.
+ * @id tape
+ * @name Piece of Tape
+ * @category Fasteners
+ * @common
  */

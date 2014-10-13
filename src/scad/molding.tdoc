@@ -6,12 +6,13 @@
  * @using 1 mold_assembly
  * @using 100 g_dragon_skin_30
  * @using 1 truncated_hand
+ * @using 2 tape
  * @step Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier's safety guidelines while working with liquid silicone. [[pad_casting/Mixing.jpg]]
- * @step Pour the liquid silicone to about halfway fill the mold.
- * @step Insert the truncated hand in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece.
- * @step Make sure the silicone settles to the bottom and that there is enough to fill the mold completely.
+ * @step Insert the truncated hand in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece. [[palm_mold/hand_in_mold.jpg]]
+ * @step Tape the truncated hand in place to prevent it from moving or floating when the silicone is poured. Leave some space around it open to pour the silicone and for air to escape. [[palm_mold/ready_to_pour.jpg]]
+ * @step Pour the liquid silicone to fill the mold. Make sure it settles to the bottom and completely surrounds the printed hand. [[palm_mold/pour.jpg]]
  * @step After the silicone cures, unscrew and separate the two halves of the mold, and pull out the truncated hand.
- * @step If necessary, use a knife to cut off any excess silicone and/or cut to better fit the patient's hand.
+ * @step If necessary, use a knife to cut off any excess silicone and/or cut the sleeve to better fit the patient's hand.
  */
 
 /**
