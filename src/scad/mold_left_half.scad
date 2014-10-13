@@ -16,10 +16,12 @@
  * @using 1 rigid_base
  * @using 4 m4_nut
  * @using 4 m4x15_bolt
+ * @using 4 tape
  * @step Set one half of the mold on a flat surface with the flat side down.
- * @step Insert the rigid thumb base into the slot in the side of the mold, with the round part towrd the inside and the shorter prong toward the closed end of the mold.
+ * @step Insert the rigid thumb base into the slot in the side of the mold, with the round part toward the inside and the shorter prong toward the closed end of the mold. [[palm_mold/moldhalf.jpg]]
  * @step Set the other half of the mold with the flat side up so the two halves align.
- * @step Fasten the two halves together using the nuts and bolts in the holes at each corner.
+ * @step Fasten the two halves together using the nuts and bolts in the holes at each corner. [[palm_mold/assembled.jpg]]
+ * @step Optional: use tape to seal the seams on the outside of the mold to prevent leakage. [[palm_mold/taped.jpg]]
  */
 
 //by Dale Price

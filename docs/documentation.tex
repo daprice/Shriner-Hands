@@ -26,8 +26,8 @@ List of things you need to build the machine divided by categories.
 
 \subsection{Prerequisites!}
 \begin{itemize}
-\item 4x 3D scan of patient's hand
-\item 4x Configuration and Rendering of 3D models
+\item 4x \hyperlink{thing_hand\_scan}{3D scan of patient's hand}
+\item 4x \hyperlink{thing_config\_file}{Configuration and Rendering of 3D models}
 \end{itemize}
 
 \subsection{Materials}
@@ -40,6 +40,7 @@ List of things you need to build the machine divided by categories.
 \begin{itemize}
 \item 4x M4 Hex Nut
 \item 1x \hyperlink{thing_velcro\_strap}{Velcro Strap}
+\item 6x Piece of Tape
 \item 4x M4x15 Bolt
 \end{itemize}
 
@@ -57,6 +58,9 @@ List of things you need to build the machine divided by categories.
 
 \section{Things Overview}
 List of things and their descriptions.
+
+\hypertarget{thing_config\_file}{\subsection{Configuration and Rendering of 3D models}}
+Configuration settings for the Shriners Hand, required to generate correct STLs of the printed parts. See the Configuration File Assembly instructions to set this up.
 
 \hypertarget{thing_rigid\_base}{\subsection{Rigid base}}
 3D printed rigid base for the static thumb post - rendered from src/scad/rigid_base.scad
@@ -76,12 +80,12 @@ Shortened and resized portion of the patient's palm to be the center of the mold
 Mold for casting the silicone finger tip grip - rendered from src/inventor/thumb_mold.ipt
 \includegraphics[width=4cm]{images/thumb\_mold.png}
 
+\hypertarget{thing_thumb2}{\subsection{Thumb}}
+Printed complete thumb without grip - rendered from src/inventor/thumb2.ipt
+
 \hypertarget{thing_g\_dragon\_skin\_10}{\subsection{grams of Dragon Skin 10 liquid silicone}}
 Dragon Skin 10 silicone resin kit, available from Smooth-On. Shore A durometer (hardness) 10.
 \includegraphics[width=4cm]{images/pad\_casting/DragonSkin.jpg}
-
-\hypertarget{thing_thumb2}{\subsection{Thumb}}
-Printed complete thumb without grip - rendered from src/inventor/thumb2.ipt
 
 \hypertarget{thing_mold\_right\_half}{\subsection{Mold - right half}}
 Right half of 3D printed mold for casting the silicone sleeve - rendered from src/scad/mold_right.scad
@@ -102,6 +106,9 @@ Dragon Skin 30 silicone resin kit, available from Smooth-On. Shore A durometer (
 Left half of 3D printed mold for casting the silicone sleeve - rendered from src/scad/mold_left_half.scad
 \includegraphics[width=4cm]{images/mold\_left\_half.png}
 
+\hypertarget{thing_hand\_scan}{\subsection{3D scan of patient's hand}}
+3D scan of the patient's hand with wrist and finger(s) held straight. Must be a manifold mesh (STL file); may be simplified for faster processing. Place in userScans directory before configuring and rendering OpenSCAD models.
+
 \hypertarget{thing_mold\_assembly}{\subsection{Palm Sleeve Mold Assembly}}
 Assembled mold for casting the silicone sleeve
 
@@ -112,7 +119,7 @@ Assembled mold for casting the silicone sleeve
 \subsection{Assemble Configuration and Rendering of 3D models}
 Things needed:
 \begin{itemize}
-\item 1x 3D scan of patient's hand
+\item 1x \hyperlink{thing_hand\_scan}{3D scan of patient's hand}
 \end{itemize}
 Steps:
 \begin{enumerate}
@@ -124,7 +131,7 @@ Steps:
 \subsection{Assemble Configuration and Rendering of 3D models}
 Things needed:
 \begin{itemize}
-\item 1x 3D scan of patient's hand
+\item 1x \hyperlink{thing_hand\_scan}{3D scan of patient's hand}
 \end{itemize}
 Steps:
 \begin{enumerate}
@@ -136,7 +143,7 @@ Steps:
 \subsection{Assemble Configuration and Rendering of 3D models}
 Things needed:
 \begin{itemize}
-\item 1x 3D scan of patient's hand
+\item 1x \hyperlink{thing_hand\_scan}{3D scan of patient's hand}
 \end{itemize}
 Steps:
 \begin{enumerate}
@@ -148,24 +155,26 @@ Steps:
 \subsection{Assemble Palm Sleeve Mold Assembly}
 Things needed:
 \begin{itemize}
-\item 1x \hyperlink{thing_rigid\_base}{Rigid base}
-\item 1x \hyperlink{thing_mold\_left\_half}{Mold - left half}
-\item 4x M4x15 Bolt
-\item 1x \hyperlink{thing_mold\_right\_half}{Mold - right half}
 \item 4x M4 Hex Nut
+\item 1x \hyperlink{thing_mold\_left\_half}{Mold - left half}
+\item 1x \hyperlink{thing_rigid\_base}{Rigid base}
+\item 4x Piece of Tape
+\item 1x \hyperlink{thing_mold\_right\_half}{Mold - right half}
+\item 4x M4x15 Bolt
 \end{itemize}
 Steps:
 \begin{enumerate}
 \item Set one half of the mold on a flat surface with the flat side down.
-\item Insert the rigid thumb base into the slot in the side of the mold, with the round part towrd the inside and the shorter prong toward the closed end of the mold.
+\item Insert the rigid thumb base into the slot in the side of the mold, with the round part toward the inside and the shorter prong toward the closed end of the mold.\\ \includegraphics[width=4cm]{images/palm\_mold/moldhalf.jpg}
 \item Set the other half of the mold with the flat side up so the two halves align.
-\item Fasten the two halves together using the nuts and bolts in the holes at each corner.
+\item Fasten the two halves together using the nuts and bolts in the holes at each corner.\\ \includegraphics[width=4cm]{images/palm\_mold/assembled.jpg}
+\item Optional: use tape to seal the seams on the outside of the mold to prevent leakage.\\ \includegraphics[width=4cm]{images/palm\_mold/taped.jpg}
 \end{enumerate}
 
 \subsection{Assemble Configuration and Rendering of 3D models}
 Things needed:
 \begin{itemize}
-\item 1x 3D scan of patient's hand
+\item 1x \hyperlink{thing_hand\_scan}{3D scan of patient's hand}
 \end{itemize}
 Steps:
 \begin{enumerate}
@@ -180,15 +189,16 @@ Things needed:
 \item 100x \hyperlink{thing_g\_dragon\_skin\_30}{grams of Dragon Skin 30 liquid silicone}
 \item 1x \hyperlink{thing_mold\_assembly}{Palm Sleeve Mold Assembly}
 \item 1x \hyperlink{thing_truncated\_hand}{Truncated Print of Patient's Hand}
+\item 2x Piece of Tape
 \end{itemize}
 Steps:
 \begin{enumerate}
 \item Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier's safety guidelines while working with liquid silicone.\\ \includegraphics[width=4cm]{images/pad\_casting/Mixing.jpg}
-\item Pour the liquid silicone to about halfway fill the mold.
-\item Insert the truncated hand in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece.
-\item Make sure the silicone settles to the bottom and that there is enough to fill the mold completely.
+\item Insert the truncated hand in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece.\\ \includegraphics[width=4cm]{images/palm\_mold/hand\_in\_mold.jpg}
+\item Tape the truncated hand in place to prevent it from moving or floating when the silicone is poured. Leave some space around it open to pour the silicone and for air to escape.\\ \includegraphics[width=4cm]{images/palm\_mold/ready\_to\_pour.jpg}
+\item Pour the liquid silicone to fill the mold. Make sure it settles to the bottom and completely surrounds the printed hand.\\ \includegraphics[width=4cm]{images/palm\_mold/pour.jpg}
 \item After the silicone cures, unscrew and separate the two halves of the mold, and pull out the truncated hand.
-\item If necessary, use a knife to cut off any excess silicone and/or cut to better fit the patient's hand.
+\item If necessary, use a knife to cut off any excess silicone and/or cut the sleeve to better fit the patient's hand.
 \end{enumerate}
 
 \subsection{Assemble Thumb with Molded Grip}
