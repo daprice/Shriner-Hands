@@ -73,7 +73,7 @@ module mold_half(side=0)
 		translate([palm_h/2+0.01,side_y,hand_d*outer_scale/2]) rotate([0,90,180]) truncated_scan(scale=outer_scale);
 
 		//spot for rigid thumb base to go during casting
-		translate([palm_h/2,side_y,-z]) rotate([0,-15,0]) rigid_base(simplified=true);
+		translate([palm_h/2,side_y,-z]) rotate([0,-thumb_angle,0]) rigid_base(simplified=true);
 
 		//slot to pry the two halves apart after casting:
 		translate([xy_margin, side_y, -side_z/2]) cube([10,3,10], center=true);
