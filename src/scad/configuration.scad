@@ -11,11 +11,11 @@
 
 hand_scan = "../../userScans/JudahRightHandShortened.stl"; //location of STL of patient's hand scan
 
-hand_d = 50; //diameter of the thickest part of the patient's hand in mm
-hand_rot = [-30,10,115]; //rotation of hand scan about each axis so that the patient's finger(s) oppose the thumb post in preview.scad
-hand_pos = [-90,-120,15]; //position of the hand in X,Y,Z axis so that the palm is centered on the Z axis and aligned with the thumb piece in preview.scad
+hand_d = 45; //diameter of the thickest part of the patient's hand in mm
+hand_rot = [-35,15,115]; //rotation of hand scan about each axis so that the patient's finger(s) oppose the thumb post in preview.scad
+hand_pos = [72,-35,105]; //position of the hand in X,Y,Z axis so that the palm is centered on the Z axis and aligned with the thumb piece in preview.scad
 
-palm_h = 50; //height of the area of the palm to be covered by the silicone
+palm_h = 45; //height of the area of the palm to be covered by the silicone
 
 base_thickness = 3; //thickness of the rigid base oval
 base_h = 26; //height of the rigid base oval
