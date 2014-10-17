@@ -37,11 +37,11 @@ rotate([90,0,0]) mold_half(0);
 module mold_half(side=0)
 {
 	xy_margin = 15;
-	z_margin = 5;
+	z_margin = 10;
 
 	side_y = hand_d*outer_scale/2+xy_margin;
 	side_z = hand_d*outer_scale + z_margin*2;
-	z = -hand_d/2 - z_margin/2 + base_thickness - 2.5;
+	z = -hand_d/2 - z_margin/2 + base_thickness - 0.0;
 
 	translate([0,-side_y + side*side_y,z]) difference() {
 		//mold block:
