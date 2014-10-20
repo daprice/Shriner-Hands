@@ -3,7 +3,6 @@
  * @id rigid_base
  * @name Rigid base
  * @category Printed
- * @using 1 config_file
  */
 
 //by Dale Price

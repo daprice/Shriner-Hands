@@ -3,7 +3,6 @@
  * @id mold_left_half
  * @name Mold - left half
  * @category Printed
- * @using 1 config_file
  */
 
 /**
@@ -11,6 +10,7 @@
  * @id mold_assembly
  * @name Palm Sleeve Mold Assembly
  * @assembled
+ * @using 1 config_file
  * @using 1 mold_left_half
  * @using 1 mold_right_half
  * @using 1 rigid_base
