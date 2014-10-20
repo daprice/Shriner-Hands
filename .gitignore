@@ -19,3 +19,4 @@ CVS
 
 *.!sync
 OldVersions/*
+src/inventor/OldVersions/*

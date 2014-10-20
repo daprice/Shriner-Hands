@@ -9,9 +9,7 @@
 ! scope="col" class="unsortable" | Comments
 ! scope="col" class="unsortable" | Diagram
 |-
-| 4 || 3D scan of patient's hand ||  ||  ||
-|-
-| 4 || Configuration and Rendering of 3D models ||  ||  ||
+| 1 || 3D scan of patient's hand ||  ||  ||
 |}
 
 === Materials ===

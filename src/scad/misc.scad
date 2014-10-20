@@ -5,7 +5,7 @@ include <configuration.scad>;
 
 module hand_scan(scale=1) //places the wearer's hand scan with selected position from configuration.scad
 {
-	rotate(hand_rot) scale(scale) translate(hand_pos) import(hand_scan, convexity=10);
+	scale(scale) translate(hand_pos) rotate(hand_rot) import(hand_scan, convexity=10);
 }
 
 module truncated_scan(scale=1) //places the relevant section of the wearer's hand
