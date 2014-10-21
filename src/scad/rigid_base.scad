@@ -59,7 +59,7 @@ module thumb_mount(simplified=false)
 	}
 
 	//add the thumb post
-	translate([2.2,thumb_slot_w/2,thumb_depth-5.2]) rotate([0,90,-90]) {
+	translate([2.2,thumb_slot_w/2,thumb_depth-5.2]) rotate([0,90,-90]) translate([0,-5,0]) rotate([0,0,-thumb_outward_angle]) translate([0,5,0]) {
 		if(!simplified && thumb_grip==true) {
 			if(thumb_length=="long") import(str(thumb_grip_dir, thumb_long_stl),convexity=5);
 			else import(str(thumb_grip_dir, thumb_short_stl), convexity=5);
