@@ -53,15 +53,13 @@
 ! scope="col" class="unsortable" | Comments
 ! scope="col" class="unsortable" | Diagram
 |-
+| 2 || Rigid base with thumb ||  ||  || [[File:rigid_base.png|50px]]
+|-
 | 1 || Mold - left half ||  ||  || [[File:mold_left_half.png|50px]]
 |-
 | 1 || Truncated Print of Patient's Hand ||  ||  || [[File:truncated_hand.png|50px]]
 |-
-| 1 || Rigid base ||  ||  || [[File:rigid_base.png|50px]]
+| 1 || Thumb Mold ||  ||  || [[File:thumb_mold.png|50px]]
 |-
 | 1 || Mold - right half ||  ||  || [[File:mold_right_half.png|50px]]
-|-
-| 1 || Thumb with grip cutout ||  ||  || [[File:thumb_with_grip_cutout.png|50px]]
-|-
-| 1 || Thumb Mold ||  ||  || [[File:thumb_mold.png|50px]]
 |}

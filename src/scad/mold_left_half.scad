@@ -50,8 +50,11 @@ module mold_half(side=0)
 			translate([-xy_margin,side*hand_d*outer_scale/2 + side*xy_margin,-hand_d*outer_scale/2 - z_margin]) cube([palm_h + xy_margin, side_y, hand_d*outer_scale+z_margin*2]);
 			//screw holes:
 			difference() {
-				translate([-xy_margin,side_y - 5 + side*5, -side_z/2 - 10]) cube([10,5,side_z+20]);
-				translate([-xy_margin+5,side_y - 5, side_z/2+5]) rotate([-90,0,0]) {
+				union() {
+					translate([-xy_margin,side_y - 5 + side*5, -side_z/2 - 10]) cube([10,5,side_z+10]);
+					translate([-xy_margin-10,side_y-5+side*5, side_z/2-10]) cube([10,5,10]);
+				}
+				translate([-xy_margin-5,side_y - 5, side_z/2-5]) rotate([-90,0,0]) {
 					boltHole(size=4, units=MM, length=10, tolerance = +0.0001, proj = -1);
 				}
 				translate([-xy_margin+5,side_y - 5, -side_z/2-5]) rotate([-90,0,0]) {
