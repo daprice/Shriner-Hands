@@ -3,7 +3,6 @@
  * @id truncated_hand
  * @name Truncated Print of Patient's Hand
  * @category Printed
- * @using 1 config_file
  */
 
 include <configuration.scad>

@@ -1,10 +1,9 @@
-Bill of Materials: Assembly
-+++++++++++++++++++++++++++
+Bill of Materials: Low Profile Thumb Prosthesis
++++++++++++++++++++++++++++++++++++++++++++++++
 
 Prerequisites!
 ==============
-- 4x 3D scan of patient's hand
-- 4x Configuration and Rendering of 3D models
+- 1x 3D scan of patient's hand
 
 Materials
 =========
@@ -20,12 +19,11 @@ Fasteners
 
 Printed
 =======
+- 2x Rigid base with thumb
 - 1x Mold - left half
 - 1x Truncated Print of Patient's Hand
-- 1x Rigid base
-- 1x Mold - right half
-- 1x Thumb with grip cutout
 - 1x Thumb Mold
+- 1x Mold - right half
 
 ----
-Generated on 2014/10/13 16:04:04 by ThingDoc - http://thingdoc.org/
+Generated on 2014/10/21 15:37:55 by ThingDoc - http://thingdoc.org/

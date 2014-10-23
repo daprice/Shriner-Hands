@@ -3,7 +3,6 @@
  * @id mold_right_half
  * @name Mold - right half
  * @category Printed
- * @using 1 config_file
  */
 
 //by Dale Price
