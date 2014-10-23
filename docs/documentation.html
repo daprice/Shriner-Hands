@@ -145,6 +145,18 @@
 			<table id="bomtable">
 				<tr>
 					<td>
+						<input type="checkbox" class="bom_checkbox" name="rigid_base">
+					</td>
+					<td class="right">
+						<strong>2 x</strong>
+					</td>
+					<td>
+						<a href="#thing_rigid_base" rel="facebox" >Rigid base with thumb</a>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
 						<input type="checkbox" class="bom_checkbox" name="mold_left_half">
 					</td>
 					<td class="right">
@@ -169,13 +181,13 @@
 			
 				<tr>
 					<td>
-						<input type="checkbox" class="bom_checkbox" name="rigid_base">
+						<input type="checkbox" class="bom_checkbox" name="thumb_mold">
 					</td>
 					<td class="right">
 						<strong>1 x</strong>
 					</td>
 					<td>
-						<a href="#thing_rigid_base" rel="facebox" >Rigid base</a>
+						<a href="#thing_thumb_mold" rel="facebox" >Thumb Mold</a>
 					</td>
 				</tr>
 			
@@ -188,30 +200,6 @@
 					</td>
 					<td>
 						<a href="#thing_mold_right_half" rel="facebox" >Mold - right half</a>
-					</td>
-				</tr>
-			
-				<tr>
-					<td>
-						<input type="checkbox" class="bom_checkbox" name="thumb_with_grip_cutout">
-					</td>
-					<td class="right">
-						<strong>1 x</strong>
-					</td>
-					<td>
-						<a href="#thing_thumb_with_grip_cutout" rel="facebox" >Thumb with grip cutout</a>
-					</td>
-				</tr>
-			
-				<tr>
-					<td>
-						<input type="checkbox" class="bom_checkbox" name="thumb_mold">
-					</td>
-					<td class="right">
-						<strong>1 x</strong>
-					</td>
-					<td>
-						<a href="#thing_thumb_mold" rel="facebox" >Thumb Mold</a>
 					</td>
 				</tr>
 			
@@ -233,9 +221,9 @@
 				</div>
 		
 			<div id="thing_rigid_base" class="thing_overview" >
-					<h3>Rigid base</h3>
+					<h3>Rigid base with thumb</h3>
 					<div class="stuff">
-						        <p>3D printed rigid base for the static thumb post - rendered from src/scad/rigid_base.scad</p>
+						        <p>3D printed rigid base and static thumb post - rendered from src/scad/rigid_base.scad</p>
 						        <img src="images/rigid_base.png" width="256" />
 					</div>
 				</div>
@@ -270,13 +258,6 @@
 					</div>
 				</div>
 		
-			<div id="thing_thumb2" class="thing_overview" >
-					<h3>Thumb</h3>
-					<div class="stuff">
-						        <p>Printed complete thumb without grip - rendered from src/inventor/thumb2.ipt</p>
-					</div>
-				</div>
-		
 			<div id="thing_m4_nut" class="thing_overview" >
 					<h3>M4 Hex Nut</h3>
 					<div class="stuff">
@@ -306,11 +287,11 @@
 					</div>
 				</div>
 		
-			<div id="thing_thumb_with_grip_cutout" class="thing_overview" >
-					<h3>Thumb with grip cutout</h3>
+			<div id="thing_mold_left_half" class="thing_overview" >
+					<h3>Mold - left half</h3>
 					<div class="stuff">
-						        <p>Printed skeletal thumb tip - rendered from src/inventor/thumb_with_grip_cutout.ipt</p>
-						        <img src="images/thumb_with_grip_cutout.png" width="256" />
+						        <p>Left half of 3D printed mold for casting the silicone sleeve - rendered from src/scad/mold_left_half.scad</p>
+						        <img src="images/mold_left_half.png" width="256" />
 					</div>
 				</div>
 		
@@ -326,14 +307,6 @@
 					<h3>Velcro Strap</h3>
 					<div class="stuff">
 						        <p>9mm wide velcro strap of adequate length to wrap around the patient&#39;s palm with at least 30% extra.</p>
-					</div>
-				</div>
-		
-			<div id="thing_mold_left_half" class="thing_overview" >
-					<h3>Mold - left half</h3>
-					<div class="stuff">
-						        <p>Left half of 3D printed mold for casting the silicone sleeve - rendered from src/scad/mold_left_half.scad</p>
-						        <img src="images/mold_left_half.png" width="256" />
 					</div>
 				</div>
 		
@@ -457,7 +430,7 @@
 									<strong>1 x</strong>
 								</td>
 								<td>
-									<a href="#thing_rigid_base" rel="facebox" >Rigid base</a>
+									<a href="#thing_rigid_base" rel="facebox" >Rigid base with thumb</a>
 								</td>
 							</tr>
 							<tr>
@@ -591,6 +564,14 @@
 						<table id="bomtable">
 							<tr>
 								<td class="right">
+									<strong>1 x</strong>
+								</td>
+								<td>
+									<a href="#thing_rigid_base" rel="facebox" >Rigid base with thumb</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="right">
 									<strong>10 x</strong>
 								</td>
 								<td>
@@ -605,20 +586,12 @@
 									<a href="#thing_thumb_mold" rel="facebox" >Thumb Mold</a>
 								</td>
 							</tr>
-							<tr>
-								<td class="right">
-									<strong>1 x</strong>
-								</td>
-								<td>
-									<a href="#thing_thumb_with_grip_cutout" rel="facebox" >Thumb with grip cutout</a>
-								</td>
-							</tr>
 						</table>
 					
 					<p>Steps:</p>
 					<ol>
 							<li>
-								Print the skeletal thumb tip and mold.
+								Print the skeletal thumb and mold.
 							</li>
 							<li>Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier&#39;s safety guidelines while working with liquid silicone.<br/>
 								<a href="images/pad_casting/Mixing.jpg" rel="facebox">
@@ -700,4 +673,4 @@
     </div>
   </body>
 </html>
-<!-- Generated on 2014/10/20 18:25:07 by ThingDoc -->
+<!-- Generated on 2014/10/21 15:37:55 by ThingDoc -->
