@@ -8,10 +8,10 @@
  * @using 1 truncated_hand
  * @using 2 tape
  * @step Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier's safety guidelines while working with liquid silicone. [[pad_casting/Mixing.jpg]]
- * @step Insert the truncated hand in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece. [[palm_mold/hand_in_mold.jpg]]
+ * @step Insert the truncated hand (automatically sized by truncated_hand.scad) in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece. [[palm_mold/hand_in_mold.jpg]]
  * @step Tape the truncated hand in place to prevent it from moving or floating when the silicone is poured. Leave some space around it open to pour the silicone and for air to escape. [[palm_mold/ready_to_pour.jpg]]
  * @step Pour the liquid silicone to fill the mold. Make sure it settles to the bottom and completely surrounds the printed hand. [[palm_mold/pour.jpg]]
- * @step After the silicone cures, unscrew and separate the two halves of the mold, and pull out the truncated hand.
+ * @step After the silicone cures (16 hours if using Dragon Skin 30), unscrew and separate the two halves of the mold, and pull out the truncated hand.
  * @step If necessary, use a knife to cut off any excess silicone and/or cut the sleeve to better fit the patient's hand.
  */
 
@@ -27,6 +27,7 @@
  * @using 1 velcro_strap
  * @step Insert the thumb into the slot on the base.
  * @step Insert the velcro strap through the slot on the base.
+ * @step (Optional) If the velcro strap does not fit well around the silicone sleeve, use a knife to cut slits into the sides of the sleeve, then route the velcro sleeve through the slits.
  * @step Insert patient's hand into the sleeve.
  * @step Fasten the velcro strap and tighten as needed to hold the prosthesis in place during use.
  */

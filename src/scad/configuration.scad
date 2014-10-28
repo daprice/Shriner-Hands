@@ -33,15 +33,15 @@ wearing = true; //whether or not to show the prosthesis being worn by the patien
  * @id config_file
  * @name Configuration and Rendering of 3D models
  * @using 1 hand_scan
- * @step Place a manifold, cleaned-up version of the patient's hand scan in the userScans folder.
+ * @step Place a manifold, cleaned-up version of the patient's hand scan (if necessary, the model can be repaired using Netfabb) in the userScans folder.
  * @step Open src/scad/configuration.scad in your favorite text editor.
  * @step Type the filename of the patient's hand scan in place of "JudahLeftHandShortened.stl" in the configuration file.
- * @step Open alignment.scad using OpenSCAD so you can see the placement of the 3D model while you edit the configuration file. (you may have to manually press the Reload and Preview button every time you make a change to the configuration file)
- * @step Change the hand_d parameter to the diameter of the thickest part of the patient's hand in mm.
- * @step Adjust the hand_pos (position of the hand in 3D space) and hand_rot (rotation of hand around each axis) parameters so that the 3D scan of the hand is aligned with the arrows as described in the following steps.
+ * @step Open src/scad/alignment.scad using OpenSCAD so you can see the placement of the 3D model while you edit the configuration file. (you may have to manually press the Reload and Preview button every time you make a change to the configuration file)
+ * @step In configuration.scad, change the hand_d parameter to the diameter of the thickest part of the patient's hand in mm.
+ * @step Adjust the hand_pos (position of the hand in 3D space) and hand_rot (rotation of hand around each axis) parameters so that the 3D scan of the hand is aligned with the arrows as described in the following 2 steps.
  * @step The palm of the hand should be roughly vertical, centered on the green crosshair as much as possible, and the hand should be oriented so that the patient's finger(s) flex toward the green arrow. [[configuration/positioning.png]]
  * @step The palmar surface should be just within the blue area when viewed from the side. [[configuration/forward_alignment.png]]
  * @step (Optional) Adjust the other parameters in the configuration file to control the dimensions of various parts of the prosthesis. The default values should work most of the time.
  * @step After you have aligned the hand, open src/scad/preview.scad in OpenSCAD to ensure that all parts of the prosthesis look correct. [[configuration/assembly_preview.png]]
- * @step Open each part to be printed (from the src/scad folder) in OpenSCAD, render each one (F6) and export as STL, then print using the STL files.
+ * @step Open each part to be printed (from the src/scad folder) in OpenSCAD, render each one (F6) and export as STL, then print using the STL files. Recommended print settings are 0.2mm or smaller layer height, three perimeters, three top and bottom solid layers, 40% rectilinear or hexagonal infill, and support material enabled.
  */
