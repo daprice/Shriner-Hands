@@ -114,17 +114,17 @@ Things needed:
 \end{itemize}
 Steps:
 \begin{enumerate}
-\item Place a manifold, cleaned-up version of the patient's hand scan in the userScans folder.
+\item Place a manifold, cleaned-up version of the patient's hand scan (if necessary, the model can be repaired using Netfabb) in the userScans folder.
 \item Open src/scad/configuration.scad in your favorite text editor.
 \item Type the filename of the patient's hand scan in place of "JudahLeftHandShortened.stl" in the configuration file.
-\item Open alignment.scad using OpenSCAD so you can see the placement of the 3D model while you edit the configuration file. (you may have to manually press the Reload and Preview button every time you make a change to the configuration file)
-\item Change the hand\_d parameter to the diameter of the thickest part of the patient's hand in mm.
-\item Adjust the hand\_pos (position of the hand in 3D space) and hand\_rot (rotation of hand around each axis) parameters so that the 3D scan of the hand is aligned with the arrows as described in the following steps.
+\item Open src/scad/alignment.scad using OpenSCAD so you can see the placement of the 3D model while you edit the configuration file. (you may have to manually press the Reload and Preview button every time you make a change to the configuration file)
+\item In configuration.scad, change the hand\_d parameter to the diameter of the thickest part of the patient's hand in mm.
+\item Adjust the hand\_pos (position of the hand in 3D space) and hand\_rot (rotation of hand around each axis) parameters so that the 3D scan of the hand is aligned with the arrows as described in the following 2 steps.
 \item The palm of the hand should be roughly vertical, centered on the green crosshair as much as possible, and the hand should be oriented so that the patient's finger(s) flex toward the green arrow.\\ \includegraphics[width=4cm]{images/configuration/positioning.png}
 \item The palmar surface should be just within the blue area when viewed from the side.\\ \includegraphics[width=4cm]{images/configuration/forward\_alignment.png}
 \item (Optional) Adjust the other parameters in the configuration file to control the dimensions of various parts of the prosthesis. The default values should work most of the time.
 \item After you have aligned the hand, open src/scad/preview.scad in OpenSCAD to ensure that all parts of the prosthesis look correct.\\ \includegraphics[width=4cm]{images/configuration/assembly\_preview.png}
-\item Open each part to be printed (from the src/scad folder) in OpenSCAD, render each one (F6) and export as STL, then print using the STL files.
+\item Open each part to be printed (from the src/scad folder) in OpenSCAD, render each one (F6) and export as STL, then print using the STL files. Recommended print settings are 0.2mm or smaller layer height, three perimeters, three top and bottom solid layers, 40\% rectilinear or hexagonal infill, and support material enabled.
 \end{enumerate}
 
 \subsection{Assemble Palm Sleeve Mold Assembly}
@@ -144,7 +144,7 @@ Steps:
 \item Insert the rigid thumb base into the slot in the side of the mold, with the round part toward the inside and the shorter prong toward the closed end of the mold.\\ \includegraphics[width=4cm]{images/palm\_mold/moldhalf.jpg}
 \item Set the other half of the mold with the flat side up so the two halves align.
 \item Fasten the two halves together using the nuts and bolts in the holes at each corner.\\ \includegraphics[width=4cm]{images/palm\_mold/assembled.jpg}
-\item Optional: use tape to seal the seams on the outside of the mold to prevent leakage.\\ \includegraphics[width=4cm]{images/palm\_mold/taped.jpg}
+\item (Optional) use tape to seal the seams on the outside of the mold to prevent leakage.\\ \includegraphics[width=4cm]{images/palm\_mold/taped.jpg}
 \end{enumerate}
 
 \subsection{Assemble Silicone sleeve}
@@ -158,10 +158,10 @@ Things needed:
 Steps:
 \begin{enumerate}
 \item Mix silicone according to the instructions from the supplier. Wear gloves and follow the supplier's safety guidelines while working with liquid silicone.\\ \includegraphics[width=4cm]{images/pad\_casting/Mixing.jpg}
-\item Insert the truncated hand in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece.\\ \includegraphics[width=4cm]{images/palm\_mold/hand\_in\_mold.jpg}
+\item Insert the truncated hand (automatically sized by truncated\_hand.scad) in the opening of the mold, narrow side down, so that it sits in the center of the mold and lines up with the overall shape of the mold. Make sure there is a small gap between the truncated hand and the thumb base piece.\\ \includegraphics[width=4cm]{images/palm\_mold/hand\_in\_mold.jpg}
 \item Tape the truncated hand in place to prevent it from moving or floating when the silicone is poured. Leave some space around it open to pour the silicone and for air to escape.\\ \includegraphics[width=4cm]{images/palm\_mold/ready\_to\_pour.jpg}
 \item Pour the liquid silicone to fill the mold. Make sure it settles to the bottom and completely surrounds the printed hand.\\ \includegraphics[width=4cm]{images/palm\_mold/pour.jpg}
-\item After the silicone cures, unscrew and separate the two halves of the mold, and pull out the truncated hand.
+\item After the silicone cures (16 hours if using Dragon Skin 30), unscrew and separate the two halves of the mold, and pull out the truncated hand.
 \item If necessary, use a knife to cut off any excess silicone and/or cut the sleeve to better fit the patient's hand.
 \end{enumerate}
 
@@ -179,7 +179,7 @@ Steps:
 \item Pour the liquid silicone to mostly fill the thumb mold.
 \item Insert the printed skeletal thumb into the filled mold as far as it will go.
 \item Remove most of the excess silicone. Small amounts of excess can be removed afer molding.
-\item After the silicone has cured, carefully pull the thumb to remove it from the mold.
+\item After the silicone has cured (up to 7 hours if using Dragon Skin 10 Slow), carefully pull the thumb to remove it from the mold.
 \item If necessary, use a knife to trim off excess silicone so that the edges of the silicone part are flush with those of the hard printed part.
 \end{enumerate}
 
@@ -194,6 +194,7 @@ Steps:
 \begin{enumerate}
 \item Insert the thumb into the slot on the base.
 \item Insert the velcro strap through the slot on the base.
+\item (Optional) If the velcro strap does not fit well around the silicone sleeve, use a knife to cut slits into the sides of the sleeve, then route the velcro sleeve through the slits.
 \item Insert patient's hand into the sleeve.
 \item Fasten the velcro strap and tighten as needed to hold the prosthesis in place during use.
 \end{enumerate}

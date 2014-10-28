@@ -21,7 +21,7 @@
  * @step Insert the rigid thumb base into the slot in the side of the mold, with the round part toward the inside and the shorter prong toward the closed end of the mold. [[palm_mold/moldhalf.jpg]]
  * @step Set the other half of the mold with the flat side up so the two halves align.
  * @step Fasten the two halves together using the nuts and bolts in the holes at each corner. [[palm_mold/assembled.jpg]]
- * @step Optional: use tape to seal the seams on the outside of the mold to prevent leakage. [[palm_mold/taped.jpg]]
+ * @step (Optional) use tape to seal the seams on the outside of the mold to prevent leakage. [[palm_mold/taped.jpg]]
  */
 
 //by Dale Price
