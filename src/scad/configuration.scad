@@ -17,7 +17,7 @@ base_h = 26; //height of the rigid base oval
 base_w = 35; //width of the rigid base oval
 
 thumb_depth = 17; //amount the thumb mount sticks out from the palm
-thumb_angle = 5; //angle of the complete thumb and base from vertical towards the patient's palm/finger(s)
+thumb_angle = 11; //angle of the complete thumb and base from vertical towards the patient's palm/finger(s)
 thumb_outward_angle = 30; //angle of the thumb post away from the hand
 thumb_length = "short"; //"long" (60mm) or "short" (40mm)
 thumb_grip = true; //whether the thumb should allow for casting a grippy pad or not
