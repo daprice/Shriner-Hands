@@ -19,7 +19,7 @@ module rigid_base(simplified=false) {
 		union() {
 			intersection() {
 				resize([base_h,base_w,base_thickness*5]) cylinder(d=base_h,h=base_thickness*5,center=true);
-				translate([0,0,base_thickness]) rotate([0,85,180]) smooth_scan(scale=1.1);
+				translate([0,0,base_thickness]) rotate([0,85,180]) hand_scan(scale=1.1);
 			}
 			//mounting slot for thumb post:
 			thumb_mount(simplified);

@@ -22,8 +22,8 @@ thumb_outward_angle = 30; //angle of the thumb post away from the hand
 thumb_length = "short"; //"long" (60mm) or "short" (40mm)
 thumb_grip = true; //whether the thumb should allow for casting a grippy pad or not
 
-outer_scale = 1.3; //scale of outside surface of prosthesis relative to the patient's hand
-inner_scale = 0.95; //scale of inside surface of prosthesis relative to the patient's hand (<1 results in a tighter fit by compensating for the stretchiness of the silicone)
+outer_scale = 1.4; //scale of outside surface of prosthesis relative to the patient's hand
+inner_scale = 0.93; //scale of inside surface of prosthesis relative to the patient's hand (<1 results in a tighter fit by compensating for the stretchiness of the silicone)
 
 wearing = true; //whether or not to show the prosthesis being worn by the patient in the preview. Does not affect final renders of parts.
 
